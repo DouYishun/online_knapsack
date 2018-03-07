@@ -20,7 +20,7 @@ void Knapsack::add(const Item newItem) {
 
 void Knapsack::removeSomeSmall(double requiredSize) {
     double cnt = 0.0;
-    while (cnt <= requiredSize) {
+    while (cnt < requiredSize) {
         cnt += smallItems.top().getSize();
         smallItems.pop();
     }
